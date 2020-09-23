@@ -1,0 +1,13 @@
+{
+    "autoload": {
+        "psr-4": {"Serp\\": "src/classes"}
+    },
+    "require": {
+        "jeremykendall/php-domain-parser": "^5.7",
+        "phpoffice/phpspreadsheet": "^1.14"
+    },
+    "scripts": {
+        "post-install-cmd": "\\Pdp\\Installer::updateLocalCache",
+        "post-update-cmd": "\\Pdp\\Installer::updateLocalCache"
+    }
+}
